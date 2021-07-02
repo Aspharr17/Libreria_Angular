@@ -1,0 +1,11 @@
+{
+  "targets": {
+    "libreriadebabel": {
+      "hosting": {
+        "Libreria": [
+          "libreriadebabel"
+        ]
+      }
+    }
+  }
+}

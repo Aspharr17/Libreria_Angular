@@ -1,0 +1,26 @@
+    <table class="container table mt-3 mb-3 animated fadeIn faster" >
+      <thead class="thead-dark">
+          <tr>
+              <th scope="col">ISBN</th>
+              <th scope="col">Titulo</th>
+              <th scope="col">Autor</th>
+              <th scope="col">Descripción</th>
+              <th scope="col">Costo</th>
+              <th></th>
+              <th></th>
+          </tr>
+      </thead>
+      <tbody>
+          <tr *ngFor="let item of items | async">
+              <th scope="row">{{item.ISBN}}</th>
+              <td>{{item.Titulo}}</td>
+              <td>{{item.Autor}}</td>
+              <td>{{item.Descripcion}}</td>
+              <td>{{item.Costo}}</td>
+              <td><button type="button" class="btn btn-danger">Eliminar</button></td>
+              <td><button type="button" class="btn btn-warning">Editar</button></td>
+           </tr>
+          
+      </tbody>
+  </table>
+    

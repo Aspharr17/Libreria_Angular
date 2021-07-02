@@ -1,0 +1,46 @@
+<div class="container pt-4">
+    <div class="row">
+        <div class="card text-center">
+            <div class="card-body">
+                <h3>Agregar Libro</h3>
+                <form class ="mt-4" [formGroup]="createLibro" (ngSubmit)="agregarLibro()">
+                    <div class="row">
+                        <div class="mb-3 col">
+                            <input type="text" class="form-control" formControlName="ISBN" placeholder="ISBN">
+                        </div>
+                        <div class="mb-3 col">
+                            <input type="text" class="form-control" formControlName="Genero" placeholder="Genero">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="mb-3 col">
+                            <input type="text" class="form-control" formControlName="Titulo" placeholder="Título">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="mb-3 col">
+                            <input type="text" class="form-control" formControlName="Autor" placeholder="Autor">
+                        </div>
+                        <div class="mb-3 col">
+                            <input type="text" class="form-control" formControlName="Editorial" placeholder="Editorial">
+                        </div>
+                        <div class="mb-3 col">
+                            <input type="text" class="form-control" formControlName="Precio" placeholder="Precio">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="mb-3 col">
+                            <button type="button" class="btn btn-danger mb-3">Cancelar</button>
+                            <button type="submit" class="btn btn-primary mb-3">Agregar</button>
+                        </div>
+                    </div>
+                        
+                    
+                      
+
+                </form>
+
+            </div>
+        </div>
+    </div>
+</div>
